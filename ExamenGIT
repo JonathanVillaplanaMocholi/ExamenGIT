@@ -1,136 +1,28 @@
-Este es el commit del main que deberá ser sustituidos por las versiones futuras, elimina esto cuando surjan conflictos con el examen A y el examen B. 
+Contesta la pregunta y realiza un commit a la rama correspondiente a la pregunta (examenA o examenB).
 
+PREGUNTA A - Explica con tus propias palabras qué es y cómo funciona git. Para ello define y explica la función de los elementos que lo forman: (commit, branch, tree, blob). 
 
+Git es una herramienta de control de versiones que sirve para que varias personas puedan trabajar al mismo tiempo con el mismo repositorio desde 
+distintos lugares. Lo que hace es una vez todos han trabajado te permite fusionar el trabajo que todos habéis hecho de forma automática o sencilla.
 
+Todos se pueden descargar el mismo repositorio (carpeta del proyecto con sus archivos), todos trabajan de manera local en él, y luego hacen un commit y modificando la versión del proyecto. Además, te permite crear ramas distintas del mismo proyecto, es decir, trabajar en distintos caminos y luego juntar
+o desechar lo que hemos creado. Este concepto es el tree, trabajar como si fuera un arból: todos trabajan desde el mismo sitio en distantas cosas con un fin comun.
 
+PREGUNTA B - Explica los cuatro "lugares" donde pueden encontrarse los archivos que forman parte de un repositorio GIT. Nombra el comando para mover un archivo de un espacio a otro con la siguiente sintaxys: [LugarInicial - LugarFinal => comando]
 
+El estado inicial es el repositorio local, donde tienes los archivos en tu ordenador, de ahi pasa al marco de trabajo, y de ahi al historial de versión. De ahí puedes mandarlo a la nube (git HUB).
 
+Estado Inicial - Marco de Trabajo =>           git add 'archivo'
 
+Marco de Trabajo - Historial de versión =>     git commit -m 'mensaje que describa la acción'
 
+Estado Inicial - Historial de versión  =>      git commit -a -m 'mensaje que describra la acción'
 
+Historial de versión - git hub =>              git push 'alias' 'branch'
 
+git hub - historial de versión =>              git pull 'alias'
 
+area de trabajo - repositorio local =>         git reset 'file'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Historial de versión - repositorio local =>    git reset 'commit'  // git reset --hard 'commit' (para ir hasta el commit indicado)
 
