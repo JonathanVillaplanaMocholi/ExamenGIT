@@ -1,3 +1,20 @@
 Contesta la pregunta y realiza un commit a la rama correspondiente a la pregunta (examenA o examenB).
 
 PREGUNTA B - Explica los cuatro "lugares" donde pueden encontrarse los archivos que forman parte de un repositorio GIT. Nombra el comando para mover un archivo de un espacio a otro con la siguiente sintaxys: [LugarInicial - LugarFinal => comando]
+
+El estado inicial es el repositorio local, donde tienes los archivos en tu ordenador, de ahi pasa al marco de trabajo, y de ahi al historial de versión. De ahí puedes mandarlo a la nube (git HUB).
+
+Estado Inicial - Marco de Trabajo =>           git add 'archivo'
+
+Marco de Trabajo - Historial de versión =>     git commit -m 'mensaje que describa la acción'
+
+Estado Inicial - Historial de versión  =>      git commit -a -m 'mensaje que describra la acción'
+
+Historial de versión - git hub =>              git push 'alias' 'branch'
+
+git hub - historial de versión =>              git pull 'alias'
+
+area de trabajo - repositorio local =>         git reset 'file'
+
+Historial de versión - repositorio local =>    git reset 'commit'  // git reset --hard 'commit' (para ir hasta el commit indicado)
+
